@@ -1,13 +1,14 @@
 import { redirect } from "next/navigation";
-import { getSession } from "@/lib/session";
-import SignUpForm from "./sign-up-form";
 
-export default async function SignUpPage() {
+import { getSession } from "@/lib/session";
+import LoginForm from "./login-form";
+
+export default async function LoginPage() {
   const session = await getSession();
 
   if (session) {
     redirect("/dashboard");
   }
 
-  return <SignUpForm />;
+  return <LoginForm />;
 }

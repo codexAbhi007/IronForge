@@ -1,9 +1,8 @@
 {
-  "extends": "@repo/typescript-config/react-library.json",
+  "extends": "@iron-forge/typescript-config/react-library.json",
   "compilerOptions": {
     "outDir": "dist",
-    "strictNullChecks": true
+    "rootDir": "src"
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["src"]
 }
